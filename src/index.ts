@@ -45,20 +45,20 @@ export default class ChainCacheClient {
   }
 
   public getGnosisTransactionsCount(address: string) : Promise<CountResult> {
-    return this.request('get', '/gnosis/transactions/count', { params : { address }})
+    return this.request('get', '/ethereum/gnosis/transactions/count', { params : { address }})
   }
 
   public getGnosisTransactions(address: string, limit : number = 50, page : number = 1) : Promise<TransactionsResult> {
-    return this.request('get', '/gnosis/transactions', { params : { address, limit, page }})
+    return this.request('get', '/ethereum/gnosis/transactions', { params : { address, limit, page }})
   }
 
 
   public getTokenTransactionsCount(address: string) : Promise<CountResult> {
-    return this.request('get', '/token/transactions/count', { params : { address }})
+    return this.request('get', '/ethereum/token/transactions/count', { params : { address }})
   }
 
   public getTokenTransactions(address: string, limit : number = 50, page : number = 1) : Promise<TransactionsResult> {
-    return this.request('get', '/token/transactions', { params : { address, limit, page }})
+    return this.request('get', '/ethereum/token/transactions', { params : { address, limit, page }})
   }
 
   /*-------------------------------------------------------------------------*

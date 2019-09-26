@@ -66,20 +66,20 @@ var ChainCacheClient = /** @class */ (function () {
         return this.request('get', '/ethereum/transactions', { params: { address: address, limit: limit, page: page } });
     };
     ChainCacheClient.prototype.getGnosisTransactionsCount = function (address) {
-        return this.request('get', '/gnosis/transactions/count', { params: { address: address } });
+        return this.request('get', '/ethereum/gnosis/transactions/count', { params: { address: address } });
     };
     ChainCacheClient.prototype.getGnosisTransactions = function (address, limit, page) {
         if (limit === void 0) { limit = 50; }
         if (page === void 0) { page = 1; }
-        return this.request('get', '/gnosis/transactions', { params: { address: address, limit: limit, page: page } });
+        return this.request('get', '/ethereum/gnosis/transactions', { params: { address: address, limit: limit, page: page } });
     };
     ChainCacheClient.prototype.getTokenTransactionsCount = function (address) {
-        return this.request('get', '/token/transactions/count', { params: { address: address } });
+        return this.request('get', '/ethereum/token/transactions/count', { params: { address: address } });
     };
     ChainCacheClient.prototype.getTokenTransactions = function (address, limit, page) {
         if (limit === void 0) { limit = 50; }
         if (page === void 0) { page = 1; }
-        return this.request('get', '/token/transactions', { params: { address: address, limit: limit, page: page } });
+        return this.request('get', '/ethereum/token/transactions', { params: { address: address, limit: limit, page: page } });
     };
     /*-------------------------------------------------------------------------*
      * Private
