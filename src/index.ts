@@ -25,7 +25,7 @@ export default class ChainCacheClient {
 
     this._apiKey = option.apiKey
     this._client = axios.create({
-      baseURL: 'http://localhost:3000/v1',
+      baseURL: 'https://api.chaincache.io/v1',
       validateStatus: function (status) {
         return status >= 200 && status < 500;
       },
