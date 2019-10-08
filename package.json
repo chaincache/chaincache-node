@@ -1,6 +1,6 @@
 {
   "name": "chaincache-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ChainCache API client for Node.js",
   "main": "src/index.ts",
   "engines": {

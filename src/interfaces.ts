@@ -8,6 +8,7 @@ export interface Transaction {
     hash: string;
     address_from: string;
     address_to: string;
+    date: string;
 }
 
 export interface Meta {
