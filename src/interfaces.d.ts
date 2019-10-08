@@ -1,4 +1,6 @@
 export interface Transaction {
+    id: number;
+    token: string;
     amount: number;
     gas_price: number;
     gas_used: number;
